@@ -15,14 +15,11 @@ public class Demo {
        customers.setCustomers(customerList);
 
        //find all customers having USA address.
+        List<Map<String, String>> res =  customers.getCustomers().stream().map(Customer::getAddresses).flatMap(Collection::stream).filter(
+                a -> a.get("country").equalsIgnoreCase("USA")
+        ).collect(Collectors.toList());
 
-
-        customers.getCustomers().stream().//Stream of List<Customer>
-                map(Customer::getAddresses).//get Stream of List<Map<String, String>> Address
-                flatMap(Collection::stream).//get Stream of flattend Map
-                filter(map -> map.get("country").equalsIgnoreCase("INDIA")).forEach(a -> {a.putAll(new HashMap<>());
-            System.out.println(a);});
-
+        System.out.println(res);
 
 
        //find all customers having home town in INDIA
