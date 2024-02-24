@@ -2,7 +2,6 @@ package mapflatMapPOc;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Demo {
 
@@ -78,9 +77,9 @@ public class Demo {
     }
     private static Map<String, String> getPhoneDetails(String number, String type, String courier) {
         Map<String, String> phone = new HashMap<>();
-        phone.put("number", "9723392055");
-        phone.put("type", "cell");
-        phone.put("courier", "T-Mobile");
+        phone.put("number", number);
+        phone.put("type", type);
+        phone.put("courier", courier);
         return phone;
     }
 
