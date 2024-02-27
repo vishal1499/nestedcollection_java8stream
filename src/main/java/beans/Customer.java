@@ -1,4 +1,4 @@
-package mapflatMapPOc;
+package beans;
 
 import java.util.List;
 import java.util.Map;
@@ -65,7 +65,7 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "mapflatMapPOc.Customer{" +
+        return "beans.Customer{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", addresses=" + addresses +

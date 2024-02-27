@@ -1,5 +1,8 @@
 package mapflatMapPOc;
 
+import beans.Customer;
+import beans.Customers;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

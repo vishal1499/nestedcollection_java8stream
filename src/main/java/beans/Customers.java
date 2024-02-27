@@ -1,4 +1,4 @@
-package mapflatMapPOc;
+package beans;
 
 import java.util.List;
 
