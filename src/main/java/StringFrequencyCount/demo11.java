@@ -1,9 +1,6 @@
 package StringFrequencyCount;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -45,6 +42,13 @@ public class demo11 {
 
         String[] str3 = {"Gain", "java","knowledge","gain","knowledge","python"};
         Arrays.stream(str3).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+
+        List<String> li = Arrays.asList(str3);
+        System.out.println(li.stream().collect(Collectors.groupingBy(Function.identity(),Collectors.counting())));
+        System.out.println(li.stream().
+                map(s -> Arrays.stream(s.split(""))).
+                flatMap(stringStream -> stringStream.sorted()).
+                collect(Collectors.groupingBy(Function.identity(),Collectors.counting())));
 
     }
 
