@@ -5,6 +5,7 @@ import beans.Employee;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class Demo1 {
@@ -21,6 +22,9 @@ public class Demo1 {
 
         Map<String,List<Employee>> empgroup=  employees.stream().
                 collect(Collectors.groupingBy(employee -> employee.getCity()));
+
+        Map<String, Set<Employee>> empmap = employees.stream().collect(Collectors.groupingBy(emp -> emp.getCity(),Collectors.toSet()));
+
         empgroup.forEach((k,v) -> System.out.println("Key: " + k +", value:" + v));
 
         Map<Boolean, List<Employee>> partMap =
