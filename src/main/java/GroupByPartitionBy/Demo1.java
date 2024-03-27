@@ -11,10 +11,10 @@ import java.util.stream.Collectors;
 public class Demo1 {
 
     public static void main(String[] args) {
-        Employee e1 = new Employee("James","Plano","1");
-        Employee e2 = new Employee("James1","Plano1","2");
-        Employee e3 = new Employee("James3","Plano","3");
-        Employee e4 = new Employee("James4","Plano4","4");
+        Employee e1 = new Employee("James","Plano","1",2000.0, "IT");
+        Employee e2 = new Employee("James1","Plano1","2", 2500.0,"IT");
+        Employee e3 = new Employee("James3","Plano","3", 5000.0,"Accounts");
+        Employee e4 = new Employee("James4","Plano4","4",1000.0, "Accounts");
 
         List<Employee> employees = new ArrayList<>();
 

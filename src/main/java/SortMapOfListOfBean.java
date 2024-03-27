@@ -7,25 +7,26 @@ import java.util.stream.Stream;
 public class SortMapOfListOfBean {
 
     public static void main(String[] args) {
-         List<Employee> employees = Arrays.asList(new Employee("Amit","Dallas","1"),
-                 new Employee("Alex","Dallas","2"),
-                 new Employee("Mike","McKenniy","3"),
-                 new Employee("Bob","Allen","4"),
-                 new Employee("Zion","Frisco","5")
+         List<Employee> employees = Arrays.asList(
+                 new Employee("Amit","Dallas","1",3.0,""),
+                 new Employee("Alex","Dallas","2",4.0,""),
+                 new Employee("Mike","McKenniy","3",4.0,""),
+                 new Employee("Bob","Allen","4",4.0,""),
+                 new Employee("Zion","Frisco","5",4.0,"")
          ) ;
 
-        List<Employee> employees1 = Arrays.asList(new Employee("Hmit","London","1"),
-                new Employee("Kalex","NewYork","2"),
-                new Employee("Mikke","McKenniy","3"),
-                new Employee("Boab","Allen","4"),
-                new Employee("Lion","Spring Creek","5")
+        List<Employee> employees1 = Arrays.asList(new Employee("Hmit","London","1",4.0,""),
+                new Employee("Kalex","NewYork","2",4.0,""),
+                new Employee("Mikke","McKenniy","3",4.0,""),
+                new Employee("Boab","Allen","4",4.0,""),
+                new Employee("Lion","Spring Creek","5",4.0,"")
         ) ;
 
-        List<Employee> employees2 = Arrays.asList(new Employee("Smith","Denevar","1"),
-                new Employee("yapex","New Jersy","2"),
-                new Employee("Dikle","McKenniy","3"),
-                new Employee("Load","Allen","4"),
-                new Employee("Oion","Spring Creek","5")
+        List<Employee> employees2 = Arrays.asList(new Employee("Smith","Denevar","1",4.0,""),
+                new Employee("yapex","New Jersy","2",4.0,""),
+                new Employee("Dikle","McKenniy","3",4.0,""),
+                new Employee("Load","Allen","4",4.0,""),
+                new Employee("Oion","Spring Creek","5",4.0,"")
         ) ;
 
         System.out.println(employees);
