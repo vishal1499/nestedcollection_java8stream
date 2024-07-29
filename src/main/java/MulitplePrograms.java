@@ -1,5 +1,7 @@
 import lombok.*;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -10,10 +12,41 @@ public class MulitplePrograms {
 
         createADateObjectUsingCalendarClass();
 
+        //seprateOddAndEvenNumbers();
+
+        palindrome();
+    }
+
+    private static void palindrome() {
+
+        String str = "ROTOR";
+        System.out.println((new StringBuilder(str)).reverse());
+        if(str.equals(new StringBuilder(str).reverse().toString())){
+            System.out.println("Palindrom");
+        }else{
+            System.out.println("Not a Palindrom");
+        }
+
+        int num = 2023202;
+        String str1 = num+"";
+        if(str1.equals(new StringBuilder(str1).reverse().toString())){
+            System.out.println("Palindrom");
+        }else{
+            System.out.println("Not a Palindrom");
+        }
+    }
+
+    private static void seprateOddAndEvenNumbers() {
     }
 
     private static void createADateObjectUsingCalendarClass() {
-            //Calendar.getInstance()
+        LocalDateTime localDate = LocalDateTime.now();
+
+        System.out.println(localDate);
+
+        TimeZone zone = TimeZone.getDefault();
+
+        System.out.println(zone);
     }
 
     private static void FindMaxSalaryOfEmployeeByDepartment() {

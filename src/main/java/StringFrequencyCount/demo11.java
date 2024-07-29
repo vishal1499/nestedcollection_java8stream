@@ -40,7 +40,7 @@ public class demo11 {
 
         //count  frequency of each string in a string array sentence
         String[] str3 = {"Gain", "java","knowledge","gain","knowledge","python"};
-        Arrays.stream(str3).collect(Collectors.groupingBy(Function.identity(),Collectors.counting()));
+        System.out.println("2.1: "+Arrays.stream(str3).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())));
 
         //count  frequency of each string in a string list sentence
         List<String> li = Arrays.asList(str3);
